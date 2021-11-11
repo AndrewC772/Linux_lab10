@@ -1,0 +1,11 @@
+[Unit]
+Description=Weather print to file widget
+
+[Service]
+User=vagrant
+WorkingDirectory=/home/vagrant
+ExecStart=/bin/bash lab_10
+restart=Always
+
+[Install]
+WantedBy=multi-user.target
